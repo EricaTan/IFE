@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三：三栏式布局</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .wrap{
+            margin:20px;
+            padding:20px;
+            background-color:#eee;
+        }
+        .left,
+        .right,
+        .main{
+            background-color:#fff;
+        }
+        .wrap,
+        .left,
+        .right,
+        .main,
+        .logo{
+            border:1px solid #999;
+        }
+        .logo{
+            width:80px;
+            height:80px;
+            background-color:#eee;
+        }
+        .left{
+            float:left;
+            width:158px;
+            padding:20px;
+        }
+        .left .logo,
+        .left .t-name{
+            float:left;
+        }
+        .left .t-name{
+            margin-left:10px;
+        }
+        .right{
+            float:right;
+            width:78px;
+            padding:0 20px;
+        }
+        .right .logo{
+            margin:20px 0;
+        }
+        .main{
+            margin-left:220px;
+            margin-right:140px;
+            padding:20px;
+        }
+
+        .clearfix::before,
+        .clearfix::after{
+            display:table;
+            content:'';
+        }
+        .clearfix::after{
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap clearfix">
+        <div class="left clearfix">
+            <div class="logo"></div>
+            <p class="t-name">团队名称</p>
+        </div>
+        <div class="right">
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+            <div class="logo"></div>
+        </div>
+        <div class="main">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci architecto commodi consectetur cumque debitis deleniti dolores dolorum eaque eius, enim eos esse est excepturi exercitationem fugit harum hic in, inventore, iste magnam magni maxime nam natus necessitatibus nesciunt nihil officiis quam quo recusandae rem reprehenderit sapiente similique unde ut vel. Accusamus adipisci alias animi at aut autem blanditiis commodi corporis cum deleniti deserunt dolore doloribus dolorum eligendi excepturi fugit harum illum inventore iste itaque magnam molestiae nam placeat, provident quasi qui rem sapiente similique tempore tenetur ullam vel, velit voluptate. Ab aliquam amet at atque, esse sunt tempora?</p>
+        </div>
+    </div>
+</body>
+</html>
